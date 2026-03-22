@@ -5,11 +5,11 @@ It started off as trying to play Bad Apple in the terminal but ended as supporti
 
 # Play
 - To execute the program, use
-## Linux
+### Linux
 ```bash
 python3 play_video.py <path> <gradient>
 ```
-## Windows
+### Windows
 ```shell
 python play_video.py <path> <gradient>
 ```
