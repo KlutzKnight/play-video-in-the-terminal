@@ -7,19 +7,16 @@ It started off as trying to play Bad Apple in the terminal but ended as supporti
 - To execute the program, use
 ### Linux
 ```bash
-python3 play_video.py <path> <gradient>
+python3 play_video.py <path>
 ```
 ### Windows
 ```shell
-python play_video.py <path> <gradient>
+python play_video.py <path>
 ```
 
 ## Arguments
 ### path
 - full or relative path of the video file
-### gradient
-- grayscale gradient
-- use 2 for black and white, 10 otherwise
 
 
 # How it works
