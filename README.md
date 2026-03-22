@@ -6,9 +6,10 @@ Playing Bad Apple in the terminal using OpenCV and Pillow, a very simple and scu
 ```
 python play_video.py <path> <gradient>
 ```
-### path
+Arguments
+- ### path
 - full or relative path of the video file
-### gradient
+- ### gradient
 - grayscale gradient
 - use 2 for black and white, 10 otherwise
 
