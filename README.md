@@ -29,12 +29,13 @@ python play_video.py <path> <gradient>
 - Save the Video frames to txt file
 - Play the video from the txt file
 
+
 # Dependencies
 - OpenCV
 - Pillow
 - Numpy
 
-## Install them with
+### Install them with
 ```
 pip install opencv-python pillow numpy
 ```
