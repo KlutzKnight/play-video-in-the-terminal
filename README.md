@@ -9,10 +9,6 @@ It started off as trying to play Bad Apple in the terminal but ended as supporti
 ```bash
 python3 play_video.py <path>
 ```
-### Windows
-```shell
-python play_video.py <path>
-```
 
 ## Arguments
 ### path
