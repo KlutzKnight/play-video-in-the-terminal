@@ -104,12 +104,7 @@ def display_video(path, fps):
 
 
 def clear_terminal():
-    # For Windows
-    if os.name == 'nt':
-        _ = os.system('cls')
-    # For macOS and Linux (POSIX systems)
-    else:
-        _ = os.system('clear')
+    _ = os.system('clear')
 
 
 def play_video(video_path, frame_data_path):
