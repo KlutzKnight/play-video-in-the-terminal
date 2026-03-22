@@ -91,16 +91,19 @@ def display_video(path, fps):
     Displays the frames line by line read from path at the given fps
 
     @param path: name of text file
-    @param fps: the frames per second to run the video
+    @param fps: the fps of the video
 
     returns: nothing
     """
     with open(path, "r") as f:
         frames = f.read().split("\n\n")
         for frame in frames:
-            print(frame)
-            time.sleep(1/fps)
+            start = time.time()
             clear_terminal()
+            print(frame)
+            end = time.time()
+            print_time = end - start
+            time.sleep(max(0, (1/fps) - print_time))
 
 
 def clear_terminal():
@@ -119,6 +122,8 @@ def play_video(video_path, frame_data_path):
     time.sleep(5)
     video = cv.VideoCapture(video_path)
     fps = video.get(cv.CAP_PROP_FPS)
+    if fps <= 0:
+        raise Exception("Error, Couldn't get FPS of the video.")
     video.release()
     display_video(frame_data_path, fps) 
 
