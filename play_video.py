@@ -39,8 +39,6 @@ def make_frames(in_path, out_path):
         
         # Change to grayscale and resize
         frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-
-        
         frame = Image.fromarray(frame).resize((rendered_width, rendered_height))
 
         # Make image an ndarray and normalize it to [0, 9]
